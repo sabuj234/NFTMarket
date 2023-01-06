@@ -13,7 +13,7 @@ export default function SignIn() {
         event.preventDefault();
         console.log(event.target.email.value);
         try {
-            let user=event.target.email.value;
+            let user=await event.target.email.value;
             setFormState({ user });
         } catch (error) {
             let user=event.target.email.value;
